@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="affordable and profassional web design">
+    <meta name="keywords" content="web design,html,css,affordable web design,profasional web design">
+    <meta name="author" content="zahra sayahi">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>responsive-side-menu</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5 " stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14 " stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23 " stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">product</a> </li>
+        </ul>
+        <div></div>
+    </nav>
+    <div id="side-menu" class="side-nav ">
+        <a href="#" class="btn-close" onclick="closeSideMenu()">&times;</a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">product</a> </li>
+        </ul>    
+    </div>
+    <script>
+        function openSlideMenu() {
+            document.getElementById('side-menu').style.width = '250px';
+        }
+        function closeSideMenu() {
+            document.getElementById('side-menu').style.width = '0';
+        }
+    </script>
+</body>
+
+</html>
